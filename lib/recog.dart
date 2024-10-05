@@ -164,7 +164,7 @@ class _RecogScreenState extends State<RecogScreen> {
                               padding: const EdgeInsets.symmetric(horizontal: 4),
                               child: Text(
                                 '${result.label} '
-                                '(${result.score.toStringAsFixed(2)}%)',
+                                '(${(result.score * 100).toStringAsFixed(2)}%)',
                                 style: const TextStyle(
                                   fontSize: 13,
                                 ),
