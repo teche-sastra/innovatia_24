@@ -52,7 +52,7 @@ class TFLInterpreter extends InheritedWidget {
     ).getBytes();
   }
 
-  Future<List<Result>?> classify({required String filePath}) async {
+  Future<List<Result>?> detect({required String filePath}) async {
     final data =
         await compute(_processImage, filePath, debugLabel: 'image_process');
     if (data == null) return null;

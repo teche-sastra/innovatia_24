@@ -15,7 +15,9 @@ class MyApp extends StatelessWidget {
       title: "Innovatia '24",
       theme: ThemeData(
         textTheme: Typography.blackMountainView.apply(fontFamily: 'Lato'),
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 11, 89, 168)),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(255, 11, 89, 168),
+        ),
       ),
       home: InterpreterWidget(
         child: Builder(

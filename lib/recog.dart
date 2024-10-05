@@ -63,7 +63,7 @@ class _RecogScreenState extends State<RecogScreen> {
       filePath = image.path;
     });
     final tflResult =
-        await TFLInterpreter.of(context).classify(filePath: image.path);
+        await TFLInterpreter.of(context).detect(filePath: image.path);
     if (!context.mounted || filePath.isEmpty) return;
     setState(() {
       error = tflResult == null;
